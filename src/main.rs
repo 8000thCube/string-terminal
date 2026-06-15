@@ -181,10 +181,8 @@ pub fn test00(){
 
 pub struct StringTerminal{log:Option<String>,output:Arc<Mutex<Parser>>,writer:Option<Box<dyn Write+Send>>,cols:u16,rows:u16}
 
-//use command_group::{CommandGroup,GroupChild};
 use portable_pty::{CommandBuilder, NativePtySystem, PtySize, PtySystem};
 use std::{
 	io::{Read,Write,self},sync::{Arc,Mutex},thread,time::Duration
 };
 use vt100::Parser;
-//use token_dict::UTF8CharIter;

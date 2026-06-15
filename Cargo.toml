@@ -1,0 +1,9 @@
+[package]
+name = "string-terminal"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+portable-pty = "0.9"
+rand = "0.10"
+vt100 = "0.16"
